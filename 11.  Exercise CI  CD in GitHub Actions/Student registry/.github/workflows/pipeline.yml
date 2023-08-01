@@ -1,4 +1,4 @@
-name: Student Registry App CI
+name: Student Registry App
 
 on:
   push:
@@ -8,9 +8,7 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-    
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js 18.x
@@ -18,7 +16,15 @@ jobs:
       with:
         node-version: 18.x
         cache: 'npm'
-        
-    - run: npm install
-
+    - run: npm i
     - run: npm test
+    
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Render Deploy Action
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: ${{secrets.SERVICE_ID}}
+          api-key: ${{secrets.TOKEN_API}}
