@@ -26,3 +26,5 @@ The main objective of the course [Software Engineering and DevOps](https://softu
 - Development and Test Environments 
 - Workshop: DevOps Project 
 - Building a CI/CD System 
+
+  ![Software Engineering and DevOps - June 2023]([https://raw.githubusercontent.com/yavorhr/certificates/refs/heads/main/ReactJS%20-%20February%202023%20-%20Certificate.jpeg](https://raw.githubusercontent.com/yavorhr/certificates/refs/heads/main/Software%20Engineering%20and%20DevOps%20-%20June%202023%20-%20Certificate.jpeg))
